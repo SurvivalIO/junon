@@ -2213,7 +2213,7 @@
       "isPiercing": true,
       "damage": 10,
       "speed": 100,
-      "categories": {"distance_dependent_width": true}
+      "categories": {"distance_dependent_width": true, "fire": true}
     },
     "Missile": {
       "width": 32,
@@ -4245,6 +4245,25 @@
         "IronOre": 10
       },
       "description": "Basic Melee weapon. Damage 10"
+    },
+    "Hammer": {
+      "parent": "Equipments.MeleeEquipment",
+      "isWeapon": true,
+      "cost": {
+        "gold": 100
+      },
+      "categories": {"melee_damage": true},
+      "isAnimatable": true,
+      "stats": {
+        "damage": 30,
+        "range": 30,
+        "meleeRange": 55
+      },
+      "requirements": {
+        "IronBar": 15,
+        "Wood": 2
+      },
+      "description": "dunno i guess useful in future"
     },
     "PlasmaBlade": {
       "parent": "Equipments.MeleeEquipment",
